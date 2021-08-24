@@ -1,0 +1,6 @@
+xcassets:
+  - inputs: TaskMVVM/Resources/
+    outputs:
+      - templateName: swift5
+        output: TaskMVVM/Resources/Assets.swift
+
