@@ -6,13 +6,11 @@
 
 import UIKit
 
-protocol Routable {
+protocol Routable: AnyObject {
     func push(_ view: UIViewController,
               animated: Bool)
     func pop(animated: Bool)
     func popTo(_ view: UIViewController,
                animated: Bool)
     func popToRoot(animated: Bool)
-    func present(_ view: UIViewController,
-                 animated: Bool)
 }
