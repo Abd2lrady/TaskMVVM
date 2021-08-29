@@ -6,7 +6,7 @@
 
 import UIKit
 
-protocol Routable: AnyObject {
+protocol RouterProtocol: AnyObject {
     func push(_ view: UIViewController,
               animated: Bool)
     func pop(animated: Bool)

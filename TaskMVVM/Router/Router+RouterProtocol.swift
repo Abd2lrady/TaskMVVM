@@ -6,7 +6,7 @@
 
 import UIKit
 
-extension Router: Routable {
+extension Router: RouterProtocol {
     func push(_ view: UIViewController, animated: Bool = true) {
         navController.pushViewController(view, animated: animated)
     }

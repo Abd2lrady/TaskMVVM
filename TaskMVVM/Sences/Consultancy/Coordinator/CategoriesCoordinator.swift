@@ -6,11 +6,11 @@
 
 import Foundation
 class CategoriesCoordinator {
-    var childCoordinators = [Coordinatable]()
+    var childCoordinators = [CoordinatorProtocol]()
 
-    let router: Routable
+    let router: RouterProtocol
 
-    init(with router: Routable) {
+    init(with router: RouterProtocol) {
         self.router = router
     }
 }
