@@ -11,10 +11,11 @@ class ConsultancyVC: UIViewController {
 
     @IBOutlet private weak var headLabelView: HeadLabel!
     @IBOutlet private weak var headBackgroundView: UIView!
-    @IBOutlet private weak var categoriesCV: UICollectionView!
+    @IBOutlet  weak var categoriesCV: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        categoriesCVSetup()
     }
     
     override func viewDidLayoutSubviews() {

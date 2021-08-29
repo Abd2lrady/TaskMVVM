@@ -5,7 +5,7 @@
 //  Created by Ahmad Abdulrady 
 
 import Foundation
-class CategoriesCoordinator {
+class ConsultancyCoordinator {
     var childCoordinators = [CoordinatorProtocol]()
 
     let router: RouterProtocol
