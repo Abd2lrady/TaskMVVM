@@ -15,6 +15,4 @@ class CategoryCell: UICollectionViewCell {
         // Initialization code
         layer.cornerRadius = 12
     }
-    
 }
-

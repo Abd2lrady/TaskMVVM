@@ -5,10 +5,10 @@
 //  Created by Ahmad Abdulrady
 
 import UIKit
-extension CategoriesCoordinator: CoordinatorProtocol {
+extension ConsultancyCoordinator: CoordinatorProtocol {
     
     func start() {
-        let view = CategoriesVC()
+        let view = ConsultancyVC()
         router.push(view, animated: true)
     }
 }
