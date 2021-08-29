@@ -28,6 +28,7 @@
 		B451943C26DB949E006C0A1A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B451943426DB949E006C0A1A /* NetworkError.swift */; };
 		B451943D26DB949E006C0A1A /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B451943626DB949E006C0A1A /* APIResponse.swift */; };
 		B451943E26DB949E006C0A1A /* NetworkManger+CategoriesTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B451943826DB949E006C0A1A /* NetworkManger+CategoriesTarget.swift */; };
+		B451944026DBB21A006C0A1A /* CategoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B451943F26DBB21A006C0A1A /* CategoriesInteractor.swift */; };
 		B4666BFE26D512160038A636 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4666BFD26D512160038A636 /* AppDelegate.swift */; };
 		B4666C0026D512160038A636 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4666BFF26D512160038A636 /* SceneDelegate.swift */; };
 		B4666C0226D512160038A636 /* ConsultancyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4666C0126D512160038A636 /* ConsultancyVC.swift */; };
@@ -64,6 +65,7 @@
 		B451943426DB949E006C0A1A /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		B451943626DB949E006C0A1A /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		B451943826DB949E006C0A1A /* NetworkManger+CategoriesTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkManger+CategoriesTarget.swift"; sourceTree = "<group>"; };
+		B451943F26DBB21A006C0A1A /* CategoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesInteractor.swift; sourceTree = "<group>"; };
 		B4666BFA26D512160038A636 /* TaskMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4666BFD26D512160038A636 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4666BFF26D512160038A636 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 		B4973B4B26DB7BF3003583F8 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				B451943F26DBB21A006C0A1A /* CategoriesInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				B445A6CB26D78DF500B6A635 /* Category.swift in Sources */,
 				B445A6B326D679CC00B6A635 /* Router+RouterProtocol.swift in Sources */,
 				B47B1A1D26D516B100941E7F /* CoordinatorProtocol.swift in Sources */,
+				B451944026DBB21A006C0A1A /* CategoriesInteractor.swift in Sources */,
 				B4973B5126DB8BF8003583F8 /* CategoriesTarget+TargetType.swift in Sources */,
 				B451943E26DB949E006C0A1A /* NetworkManger+CategoriesTarget.swift in Sources */,
 				B445A6B726D67E8700B6A635 /* ConsultancyCoordinator.swift in Sources */,

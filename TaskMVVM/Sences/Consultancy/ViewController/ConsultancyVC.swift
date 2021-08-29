@@ -12,18 +12,26 @@ class ConsultancyVC: UIViewController {
     @IBOutlet private weak var headLabelView: HeadLabel!
     @IBOutlet private weak var headBackgroundView: UIView!
     @IBOutlet  weak var categoriesCV: UICollectionView!
-    var network = NetworkManager()
+    var networkManager = NetworkManager()
+    var interactor = CategoriesInteractor()
     override func viewDidLoad() {
         super.viewDidLoad()
         categoriesCVSetup()
-        network.getCategories { result, status in
-            switch result {
-            case .success(let data):
-                print(data.status)
-            case .failure(let error):
-            print(error.localizedDescription)
-            }
+        
+        interactor.getCategories { categories, code in
+            print("interactor response")
+            print(code)
+            print(categories)
         }
+        
+//        network.getCategories { result, status in
+//            switch result {
+//            case .success(let data):
+//                print(data.status)
+//            case .failure(let error):
+//            print(error.localizedDescription)
+//            }
+//        }
     }
     
     override func viewDidLayoutSubviews() {
