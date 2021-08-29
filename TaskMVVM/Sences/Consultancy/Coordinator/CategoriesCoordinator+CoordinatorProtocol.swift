@@ -5,7 +5,7 @@
 //  Created by Ahmad Abdulrady
 
 import UIKit
-extension CategoriesCoordinator: Coordinatable {
+extension CategoriesCoordinator: CoordinatorProtocol {
     
     func start() {
         let view = CategoriesVC()

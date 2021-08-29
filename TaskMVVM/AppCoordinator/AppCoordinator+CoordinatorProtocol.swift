@@ -1,19 +1,13 @@
 //
-//  AppCoordinator.swift
+//  AppCoordinator+Coordinatable.swift
 //  TaskMVVM
 //
-//  Created by Ahmad Abdulrady 
+//  Created by Ahmad Abdulrady on 28/08/2021.
+//
 
 import UIKit
 
-class AppCoordinator: Coordinatable {
-    let window: UIWindow
-    var childCoordinators = [Coordinatable]()
-
-    init(window: UIWindow) {
-        self.window = window
-    }
-
+extension AppCoordinator: CoordinatorProtocol {
     func start() {
         let navController = UINavigationController()
         let router = Router(with: navController)
@@ -23,5 +17,4 @@ class AppCoordinator: Coordinatable {
         window.rootViewController = navController
         window.makeKeyAndVisible()
     }
-    
 }

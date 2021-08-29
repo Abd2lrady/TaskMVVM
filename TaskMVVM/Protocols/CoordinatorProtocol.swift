@@ -5,7 +5,7 @@
 //  Created by Ahmad Abdulrady 
 
 import Foundation
-protocol Coordinatable: AnyObject {
-    var childCoordinators: [Coordinatable] { get set }
+protocol CoordinatorProtocol: AnyObject {
+    var childCoordinators: [CoordinatorProtocol] { get set }
     func start()
 }
