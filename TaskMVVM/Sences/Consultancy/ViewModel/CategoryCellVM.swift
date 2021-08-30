@@ -4,10 +4,10 @@
 //
 //  Created by Ahmad Abdulrady
 
-import UIKit
+import Foundation
 
-struct CategoryVM {
-    var category: Category
+struct CategoryCellVM {
+    private var category: Category
     
     init(with category: Category) {
         self.category = category

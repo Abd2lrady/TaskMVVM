@@ -11,13 +11,16 @@ extension ConsultancyVC: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return consultancyVM.categoriesCount
     }
     
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = categoriesCV.dequeueReusableCell(withReuseIdentifier: "CategoryCell",
-                                                    for: indexPath)
+        guard let cell = categoriesCV.dequeueReusableCell(withReuseIdentifier: "CategoryCell",
+                                                          for: indexPath) as? CategoryCell else {
+            return UICollectionViewCell() }
+        let cellVM = consultancyVM.getCategoryCellVM(at: indexPath.row)
+        cell.nameLabel = cellVM.title
         return cell
     }
     

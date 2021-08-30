@@ -59,8 +59,8 @@
             </constraints>
             <size key="customSize" width="249" height="283"/>
             <connections>
+                <outlet property="_nameLabel" destination="afE-42-fna" id="hS1-E5-P5l"/>
                 <outlet property="imgView" destination="OiO-5S-nfN" id="LCB-BH-Obi"/>
-                <outlet property="nameLabel" destination="afE-42-fna" id="UDd-DE-EMH"/>
             </connections>
             <point key="canvasLocation" x="121.0144927536232" y="170.42410714285714"/>
         </collectionViewCell>
