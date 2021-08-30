@@ -11,7 +11,7 @@ extension ConsultancyVC: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        return consultancyVM.categoriesCount
+        return consultancyVM?.categoriesCount ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -19,8 +19,8 @@ extension ConsultancyVC: UICollectionViewDataSource {
         guard let cell = categoriesCV.dequeueReusableCell(withReuseIdentifier: "CategoryCell",
                                                           for: indexPath) as? CategoryCell else {
             return UICollectionViewCell() }
-        let cellVM = consultancyVM.getCategoryCellVM(at: indexPath.row)
-        cell.nameLabel = cellVM.title
+        let cellVM = consultancyVM?.getCategoryCellVM(at: indexPath.row)
+        cell.nameLabel = cellVM?.title ?? ""
         return cell
     }
     
